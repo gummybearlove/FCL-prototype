@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Class Legal — Conveyancing, from offer to settlement</title>
+<meta name="description" content="Fixed-fee conveyancing across Melbourne, Brisbane, the Sunshine Coast, Gold Coast, Sydney, Hobart and Perth. Track your matter from offer to settlement.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M5.5 15.4C5.5 11.2 8.6 8.4 12.8 7.4L30 3.6v40.8c0 8.2-3.2 13.4-8 13.8-6.2-1.6-12.4-13.4-14.8-25.6z' fill='%23F03A20'/%3E%3Cpath d='M32 17.4l21.4-3.6c3.6-.6 6.2 2.2 5.2 5.8l-7.4 26.8c-2 8.8-5.8 13.8-10.8 12.6-5.6-2.2-8-12.2-8.2-23z' fill='%23B4784C'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero.jpg" as="image">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- ============ ICONS ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.5h3l1.6 4-2 1.4a12 12 0 006.3 6.3l1.4-2 4 1.6v3a2 2 0 01-2.2 2A17 17 0 014.2 5.7 2 2 0 016.2 3.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 12.2l2.6 2.6 5-5.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 6.5l9 5.5-9 5.5z" fill="currentColor"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.6" y="6" width="12.8" height="12" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.4 11l6-3.4v8.8l-6-3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.4C10.4 5 8.3 4.4 3 4.6v13.2c5.3-.2 7.4.4 9 1.8 1.6-1.4 3.7-2 9-1.8V4.6c-5.3-.2-7.4.4-9 1.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 6.4v13.2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-id" viewBox="0 0 24 24"><rect x="2.6" y="5" width="18.8" height="14" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.6" cy="10.6" r="2.1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.6 16.4c.6-1.8 1.7-2.7 3-2.7s2.4.9 3 2.7M14.4 9.4h4M14.4 12.6h4M14.4 15.6h2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4.5" y="2.8" width="15" height="18.4" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="7.6" y="6" width="8.8" height="3.4" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.2 13.2h.01M12 13.2h.01M15.8 13.2h.01M8.2 17h.01M12 17h.01M15.8 17h.01" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path d="M3.4 10.6L12 3.6l8.6 7v9.2a1 1 0 01-1 1h-5v-6.2h-5.2v6.2h-5a1 1 0 01-1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M18.6 3.4v4.2M20.7 5.5h-4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.6v11.2M7.6 10.6l4.4 4.4 4.4-4.4M4.4 19.6h15.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-case" viewBox="0 0 24 24"><rect x="2.8" y="7.4" width="18.4" height="12.6" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.6 7.4V5.6a1.6 1.6 0 011.6-1.6h3.6a1.6 1.6 0 011.6 1.6v1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7.4 18.4a4.2 4.2 0 01-.4-8.4 5.2 5.2 0 0110.2-1.2 3.9 3.9 0 01-.4 9.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 9.4L12 4l9 5.4M4.6 9.6v8.2M9.4 9.6v8.2M14.6 9.6v8.2M19.4 9.6v8.2M2.6 19.8h18.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l8.4 8.4M16.4 16.4l2-2M13.8 13.8l2.2-2.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M14.7 7.5h-1.3c-.9 0-1.4.6-1.4 1.4v1.4h2.4l-.3 2.2h-2.1v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24">
+    <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="16.5" cy="6.7" r="1" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-li" viewBox="0 0 24 24">
+    <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="3.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M7.4 10.3v6.3M7.4 7.5v.1M11 16.6v-6.3M11 12.5c0-1.4 1-2.3 2.2-2.3s2.3.9 2.3 2.4v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24">
+    <rect x="2.6" y="5.4" width="18.8" height="13.2" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M10.3 9.4l4.5 2.6-4.5 2.6z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3.4 7.4h17.2M3.4 12h17.2M3.4 16.6h17.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<!-- ============ UTILITY BAR ============ -->
+<div class="utility">
+  <div class="shell utility__in">
+    <span class="utility__item"><svg class="ic ic--sm"><use href="#i-case"/></svg>35,000+ Matters completed</span>
+    <span class="utility__item"><svg class="ic ic--sm"><use href="#i-cloud"/></svg>5 states</span>
+    <span class="utility__item"><svg class="ic ic--sm"><use href="#i-bank"/></svg>9 offices</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="shell header__in">
+    <a class="brand" href="#top" aria-label="First Class Legal — home">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M5.5 15.4C5.5 11.2 8.6 8.4 12.8 7.4L30 3.6v40.8c0 8.2-3.2 13.4-8 13.8-6.2-1.6-12.4-13.4-14.8-25.6z" fill="#F03A20"/>
+        <path d="M32 17.4l21.4-3.6c3.6-.6 6.2 2.2 5.2 5.8l-7.4 26.8c-2 8.8-5.8 13.8-10.8 12.6-5.6-2.2-8-12.2-8.2-23z" fill="#B4784C" opacity=".94"/>
+      </svg>
+      <span class="brand__word">First Class Legal</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#properties">Buying</a>
+      <a href="#fees">Selling</a>
+      <a href="#fees">Fees</a>
+      <span class="nav__drop"><a href="#services">Agent</a><svg class="ic ic--xs"><use href="#i-chev"/></svg></span>
+      <span class="nav__drop"><a href="#services">Services</a><svg class="ic ic--xs"><use href="#i-chev"/></svg></span>
+      <span class="nav__drop"><a href="#footer">Locations</a><svg class="ic ic--xs"><use href="#i-chev"/></svg></span>
+      <span class="nav__drop"><a href="#guides">Resource</a><svg class="ic ic--xs"><use href="#i-chev"/></svg></span>
+    </nav>
+
+    <div class="header__end">
+      <a class="btn btn--red btn--sm" href="#quote">Get a quote</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__stage" id="heroStage">
+    <div class="hero__media">
+      <img class="hero__img" src="assets/img/hero.jpg" alt="A modern living room opening onto a coastal view at dusk" fetchpriority="high">
+    </div>
+    <div class="hero__scrim"></div>
+
+    <div class="hero__inner shell">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__txt" data-split>Peace of Mind,</span></span>
+          <span class="hero__line"><span class="hero__txt" data-split>sale to settlement.</span></span>
+          <span class="hero__line hero__line--red"><span class="hero__txt" data-split>Offer only refers to buying</span></span>
+        </h1>
+        <p class="hero__lede" data-rise>Track your matter at every stage with our conveyancing technology – from the first enquiry to the day the keys change hands.</p>
+        <div class="hero__cta" data-rise>
+          <a class="btn btn--red" href="#quote">Get Your Free Quote</a>
+          <a class="btn btn--ghost" href="tel:1300956321"><svg class="ic ic--sm"><use href="#i-phone"/></svg>1300 956 321</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__trust" data-rise>
+      <span class="hero__trust-label">EXCELLENT</span>
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <span class="hero__trust-count">1,922 reviews</span>
+      <span class="hero__trust-badge"><svg class="ic ic--xs"><use href="#i-check"/></svg>Trustindex</span>
+    </div>
+
+    <div class="hero__melt" id="heroMelt"></div>
+  </div>
+</section>
+
+<!-- ============ PROPERTY TYPES ============ -->
+<section class="paper section properties" id="properties">
+  <div class="shell">
+    <h2 class="statement" id="statement" data-split-opts data-step="26" data-rise=".55em" data-tilt="4">
+      <span class="s-line"><span class="s-txt" data-split>Conveyancing for</span></span>
+      <span class="s-line">
+        <span class="pill" data-pill><img src="assets/img/prop-buy.jpg" alt="Signing a property contract"></span>
+        <span class="s-txt" data-split>every kind of</span>
+      </span>
+      <span class="s-line">
+        <span class="pill" data-pill><img src="assets/img/prop-offplan.jpg" alt="A house under construction"></span>
+        <span class="s-txt" data-split>property</span>
+      </span>
+    </h2>
+    <div class="emblem" data-emblem aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <g transform="translate(30.4 32) scale(1.55)" fill="none" stroke="currentColor"
+           stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="8" cy="8" r="4.2"/>
+          <path d="M11 11l8.4 8.4M16.4 16.4l2-2M13.8 13.8l2.2-2.2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="rail" id="rail" data-rail>
+    <div class="rail__track" id="railTrack">
+      <article class="pcard" data-rise>
+        <div class="pcard__media"><img src="assets/img/prop-buy.jpg" alt="Hands signing a property contract"></div>
+        <div class="pcard__body">
+          <h3 class="pcard__title">Buying Property</h3>
+          <p class="pcard__text">Contract review, searches, finance and settlement.</p>
+          <a class="pcard__cta" href="#services">Learn More<svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="pcard" data-rise>
+        <div class="pcard__media"><img src="assets/img/prop-sell.jpg" alt="A home for sale"></div>
+        <div class="pcard__body">
+          <h3 class="pcard__title">Selling Property</h3>
+          <p class="pcard__text">Section 32 and contract prepared fast for listing.</p>
+          <a class="pcard__cta" href="#services">Learn More<svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="pcard" data-rise>
+        <div class="pcard__media"><img src="assets/img/prop-offplan.jpg" alt="An off-plan development"></div>
+        <div class="pcard__body">
+          <h3 class="pcard__title">Off-Plan Purchases</h3>
+          <p class="pcard__text">Sunset clauses, stamp duty concessions, final inspection.</p>
+          <a class="pcard__cta" href="#services">Learn More<svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="pcard" data-rise>
+        <div class="pcard__media"><img src="assets/img/prop-smsf.jpg" alt="Legal documents and a gavel"></div>
+        <div class="pcard__body">
+          <h3 class="pcard__title">SMSF Purchases</h3>
+          <p class="pcard__text">Bare trust and lending requirements handled end to end.</p>
+          <a class="pcard__cta" href="#services">Learn More<svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="shell">
+    <div class="rail-nav">
+      <button class="rail-btn" type="button" data-rail-prev="rail" aria-label="Previous property type"><svg class="ic ic--sm"><use href="#i-chev-l"/></svg></button>
+      <button class="rail-btn" type="button" data-rail-next="rail" aria-label="Next property type"><svg class="ic ic--sm"><use href="#i-chev-r"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILM ============ -->
+<section class="film" id="film">
+  <div class="film__media"><img src="assets/img/film.jpg" alt="The First Class Legal team in a client boardroom"></div>
+  <div class="film__scrim"></div>
+  <div class="shell film__in">
+    <button class="badge" type="button" aria-label="Play the First Class Legal film">
+      <span class="badge__ring" id="badgeRing" aria-hidden="true"></span>
+      <span class="badge__core"><svg class="ic ic--md"><use href="#i-play"/></svg></span>
+    </button>
+    <p class="film__cap" data-rise>Meet the team behind the file.</p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="shell services__grid">
+    <figure class="services__figure" data-portrait>
+      <div class="frame"><img src="assets/img/services.jpg" alt="Conveyancers reviewing contract documents"></div>
+    </figure>
+    <div class="services__copy">
+      <h2 class="h2" data-split-title>Conveyancing Services</h2>
+      <div class="prose" data-stagger>
+        <p>Buying or selling a property involves the completion of a legal process. Without legal assistance, transfer of ownership may not be completed correctly.</p>
+        <p>We take care of a wide range of tasks including: searches, adjustments, settlements and notifying rating authorities. Using our professional conveyancing services helps ensure that your transaction is efficient and stress-free as possible.</p>
+      </div>
+      <dl class="facttable" data-stagger>
+        <div class="facttable__row"><dt>Searches &amp; due diligence</dt><dd>Ordered &amp; reviewed</dd></div>
+        <div class="facttable__row"><dt>Settlement method</dt><dd>Electronic or PEXA</dd></div>
+        <div class="facttable__row"><dt>Fee structure</dt><dd>Fixed, itemised upfront</dd></div>
+        <div class="facttable__row"><dt>Status visibility</dt><dd>Live in the app</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUR STEPS ============ -->
+<section class="section steps" id="steps">
+  <div class="shell steps__grid">
+    <div class="steps__copy">
+      <h2 class="h2" data-split-title>From Listing To Settlement In Four Steps</h2>
+      <ol class="steps__list" data-stagger>
+        <li class="step">
+          <span class="step__dot">1</span>
+          <div class="step__body">
+            <h4 class="step__title">Get Your Quote</h4>
+            <p class="step__text">Your price upfront, with every disbursement listed.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot">2</span>
+          <div class="step__body">
+            <h4 class="step__title">We Review The Contract</h4>
+            <p class="step__text">Contract and section 32 checked before you sign or bid.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot">3</span>
+          <div class="step__body">
+            <h4 class="step__title">Track Every Step</h4>
+            <p class="step__text">See deposit release, mortgage discharge, searches, and adjustments live in the app.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot">4</span>
+          <div class="step__body">
+            <h4 class="step__title">We Settle</h4>
+            <p class="step__text">Secure electronic settlement. You get the keys.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <figure class="steps__figure" data-portrait>
+      <div class="frame"><img src="assets/img/steps.jpg" alt="A conveyancer shaking hands with clients"></div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD ============ -->
+<section class="section dashboard" id="dashboard">
+  <div class="shell dashboard__grid">
+    <figure class="dashboard__figure" data-portrait>
+      <div class="frame">
+        <img src="assets/img/dashboard.jpg" alt="A conveyancer checking the conveyancing dashboard on a laptop">
+      </div>
+      <ul class="chips" data-chips>
+        <li class="chip chip--tan"><svg class="ic ic--xs"><use href="#i-check"/></svg>Quote Provided</li>
+        <li class="chip"><svg class="ic ic--xs"><use href="#i-check"/></svg>Instruction Received</li>
+        <li class="chip"><svg class="ic ic--xs"><use href="#i-check"/></svg>Searches Ordered</li>
+      </ul>
+    </figure>
+    <div class="dashboard__copy">
+      <h2 class="h2" data-split-title>Online Dashboard</h2>
+      <p class="prose" data-rise>Clear visibility of your progress to settlement. Our <strong>digital conveyancing dashboard</strong> helps you track each required step, action and milestone throughout the process.</p>
+      <div class="btn-row" data-rise>
+        <a class="btn btn--red" href="#quote">Request a Quote</a>
+        <a class="btn btn--outline" href="#quote"><svg class="ic ic--sm"><use href="#i-download"/></svg>Download the App</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESOURCES ============ -->
+<section class="mist section resources" id="resources">
+  <div class="shell">
+    <h2 class="h2 h2--center" data-split-title>More ways to get the answers you need.</h2>
+    <p class="lede lede--center" data-rise>Explore our helpful resources including legal terms, stories, and FAQs.</p>
+    <div class="cards cards--3">
+      <article class="rcard" data-rise>
+        <div class="rcard__media"><img src="assets/img/res-life.jpg" alt="First Class Legal team at an awards evening"></div>
+        <div class="rcard__body">
+          <svg class="ic ic--lg rcard__icon"><use href="#i-video"/></svg>
+          <h3 class="rcard__title">Life at First Class Legal</h3>
+          <p class="rcard__text">We believe great outcomes start with great people. Our team brings together diverse backgrounds and a shared commitment.</p>
+          <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="rcard" data-rise>
+        <div class="rcard__media"><img src="assets/img/res-glossary.jpg" alt="Signing a contract with a fountain pen"></div>
+        <div class="rcard__body">
+          <svg class="ic ic--lg rcard__icon"><use href="#i-book"/></svg>
+          <h3 class="rcard__title">Glossary</h3>
+          <p class="rcard__text">Explore our helpful resources including FAQs and legal terms and definitions.</p>
+          <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="rcard" data-rise>
+        <div class="rcard__media"><img src="assets/img/res-terms.jpg" alt="A model house with keys and a contract"></div>
+        <div class="rcard__body">
+          <svg class="ic ic--lg rcard__icon"><use href="#i-id"/></svg>
+          <h3 class="rcard__title">Terms &amp; Conditions</h3>
+          <p class="rcard__text">Important information about the content on our website.</p>
+          <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIXED FEE ============ -->
+<section class="gradient-bg section fees" id="fees">
+  <div class="shell">
+    <h2 class="h2 h2--center" data-split-title>A Fixed-Fee Quote For Your Property</h2>
+    <p class="lede lede--center" data-rise>We handle searches, adjustments, settlements and notifying rating authorities, and make sure you understand each step.</p>
+    <div class="cards cards--3">
+      <article class="fcard" data-rise>
+        <div class="fcard__media"><img src="assets/img/fee-buy.jpg" alt="A couple viewing property listings together"></div>
+        <div class="fcard__body">
+          <h3 class="fcard__title">Buying</h3>
+          <p class="fcard__lead">Every quote includes:</p>
+          <ul class="ticks">
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Contract &amp; Section 32 review</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Liaison with lender or broker</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>PEXA settlement</li>
+          </ul>
+          <a class="btn btn--red btn--block" href="#quote">Get Buying Quote</a>
+        </div>
+      </article>
+      <article class="fcard" data-rise>
+        <div class="fcard__media"><img src="assets/img/fee-sell.jpg" alt="House keys held over a contract"></div>
+        <div class="fcard__body">
+          <h3 class="fcard__title">Selling</h3>
+          <p class="fcard__lead">Every quote includes:</p>
+          <ul class="ticks">
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Section 32 &amp; contract prepared</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Discharge of mortgage</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>PEXA settlement</li>
+          </ul>
+          <a class="btn btn--red btn--block" href="#quote">Get Selling Quote</a>
+        </div>
+      </article>
+      <article class="fcard" data-rise>
+        <div class="fcard__media"><img class="muted" src="assets/img/fee-offplan.jpg" alt="An architectural model held in hand"></div>
+        <div class="fcard__body">
+          <h3 class="fcard__title">Off The Plan</h3>
+          <p class="fcard__lead">Every quote includes:</p>
+          <ul class="ticks">
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Contract &amp; sunset clause review</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Duty concession check</li>
+            <li><svg class="ic ic--sm"><use href="#i-check"/></svg>Settlement on registration</li>
+          </ul>
+          <a class="btn btn--red btn--block" href="#quote">Get Off-The-Plan Quote</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="paper section testimonials" id="testimonials">
+  <div class="shell">
+    <h2 class="h2 h2--center" data-split-title>What buyers, sellers and agents say</h2>
+  </div>
+  <div class="rail rail--quotes" id="quoteRail">
+    <div class="rail__track" id="quoteTrack">
+      <article class="qcard" data-rise>
+        <div class="stars stars--lg" aria-label="Five star review">★★★★★</div>
+        <h3 class="qcard__title">Outstanding Services</h3>
+        <p class="qcard__text">I recently used First Class Legal for the sale of my property, and Irene Giannikis was outstanding throughout the entire process.</p>
+        <div class="qcard__by"><span class="avatar avatar--kb">KB</span><span><b>Kosti Baker</b><i>Mayfield, VIC</i></span></div>
+      </article>
+      <article class="qcard" data-rise>
+        <div class="stars stars--lg" aria-label="Five star review">★★★★★</div>
+        <h3 class="qcard__title">Highly recommended!</h3>
+        <p class="qcard__text">If you need a conveyancer you will not find better than FCL. All of their 5 star reviews are not lying! I have utilised Irene and Audrina. Both were outstanding.</p>
+        <div class="qcard__by"><span class="avatar avatar--cd">CD</span><span><b>Candice</b><i>RayWhite Agency, VIC</i></span></div>
+      </article>
+      <article class="qcard" data-rise>
+        <div class="stars stars--lg" aria-label="Five star review">★★★★★</div>
+        <h3 class="qcard__title">Exceptional experience with First Class Legal</h3>
+        <p class="qcard__text">I had an exceptional experience with First Class Legal, and I would especially like to thank Stephanie for her outstanding support throughout my entire property journey.</p>
+        <div class="qcard__by"><span class="avatar">DD</span><span><b>Dmitry D</b><i>Aspen, QLD</i></span></div>
+      </article>
+    </div>
+  </div>
+  <div class="shell">
+    <div class="rail-nav">
+      <button class="rail-btn" type="button" data-rail-prev="quoteRail" aria-label="Previous review"><svg class="ic ic--sm"><use href="#i-chev-l"/></svg></button>
+      <button class="rail-btn" type="button" data-rail-next="quoteRail" aria-label="Next review"><svg class="ic ic--sm"><use href="#i-chev-r"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE FORM ============ -->
+<section class="paper section quotecard" id="quote">
+  <div class="shell quotecard__grid">
+    <div class="quotecard__copy">
+      <h2 class="h2 h2--big" data-split-title>Get a <em class="red">fixed-fee quote</em> in minutes.</h2>
+      <p class="prose" data-rise>One form, one outcome — a quote in your inbox, with the option to add our First-Home Buyer's Guide.</p>
+      <div class="quotecard__alt" data-rise>
+        <span>Want to check your contract?</span>
+        <a class="btn btn--ink" href="#quote">Check my contract</a>
+      </div>
+    </div>
+
+    <form class="form" id="quoteForm" novalidate>
+      <div class="form__tabs" role="tablist" aria-label="Quote type">
+        <button class="form__tab is-active" type="button" role="tab" aria-selected="true" data-tab="buying">Buying</button>
+        <button class="form__tab" type="button" role="tab" aria-selected="false" data-tab="selling">Selling</button>
+      </div>
+      <div class="form__row">
+        <label class="field">
+          <span class="field__label">Full Name</span>
+          <input type="text" name="name" placeholder="John Smith" autocomplete="name">
+        </label>
+        <label class="field">
+          <span class="field__label">Property Address</span>
+          <input type="text" name="address" placeholder="42 George St, Sydney NSW 2000">
+        </label>
+      </div>
+      <div class="form__row">
+        <label class="field">
+          <span class="field__label">Email</span>
+          <input type="email" name="email" placeholder="john@hotmail.com" autocomplete="email">
+        </label>
+        <label class="field">
+          <span class="field__label">Phone</span>
+          <input type="tel" name="phone" placeholder="Enter phone number" autocomplete="tel">
+        </label>
+      </div>
+      <label class="check">
+        <input type="checkbox" name="guide">
+        <span class="check__box"><svg class="ic ic--xs"><use href="#i-check"/></svg></span>
+        <span>Send me the free First-Home Buyer's Guide</span>
+      </label>
+      <button class="btn btn--red btn--block" type="submit">Get My Free Quote</button>
+      <p class="form__note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ GUIDES ============ -->
+<section class="section guides" id="guides">
+  <div class="shell">
+    <div class="guides__head">
+      <h2 class="h2" data-split-title>Guide &amp; Calculators</h2>
+      <a class="link-red" href="#guides">All guides <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cards cards--3">
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-calc"/></svg>
+        <h3 class="gcard__title">Victorian stamp duty calculator</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-house"/></svg>
+        <h3 class="gcard__title">Settlement cost estimator</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-book"/></svg>
+        <h3 class="gcard__title">First home buyer's guide to conveyancing in Victoria</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-book"/></svg>
+        <h3 class="gcard__title">What is a section 32? A plain-English checklist</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-book"/></svg>
+        <h3 class="gcard__title">Settlement Day: What happens, hour by hour</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="gcard" data-rise>
+        <svg class="ic ic--lg gcard__icon"><use href="#i-book"/></svg>
+        <h3 class="gcard__title">Conveyancer VS Property Lawyer: Which do you need?</h3>
+        <a class="link-red" href="#guides">Learn more <svg class="ic ic--sm"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="shell">
+    <h2 class="h2 h2--center" data-split-title>Frequently asked questions</h2>
+    <div class="faq__list" id="faqList">
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">How much does conveyancing cost in Melbourne?<svg class="ic ic--sm"><use href="#i-chev"/></svg></button>
+        <div class="faq__a"><div><p>Our fee is fixed and quoted upfront, with every disbursement itemised — searches, registration fees, lender and water authority charges — so there are no surprises on the settlement statement.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">When should I engage a conveyancer?<svg class="ic ic--sm"><use href="#i-chev"/></svg></button>
+        <div class="faq__a"><div><p>As early as you can — ideally before you sign a contract of sale. If you have already signed, we can still review the contract and advise on the cooling-off period and your options.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">Is there a cooling-off period in Victoria?<svg class="ic ic--sm"><use href="#i-chev"/></svg></button>
+        <div class="faq__a"><div><p>Yes. A standard Victorian contract of sale includes a five-day cooling-off period for the buyer. We explain how it works and what you need to do to exercise it.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">Do I need conveyancer or a lawyer?<svg class="ic ic--sm"><use href="#i-chev"/></svg></button>
+        <div class="faq__a"><div><p>Either will do the job. Our conveyancers handle residential property settlements end to end — contract review, searches, adjustments and settlement — at a fixed fee.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">How long does settlement take?<svg class="ic ic--sm"><use href="#i-chev"/></svg></button>
+        <div class="faq__a"><div><p>Most straightforward settlements complete in four to six weeks from the date of sale, with a clear timeline published in your dashboard at every stage.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIAL MARQUEE ============ -->
+<section class="marquee" aria-label="Accreditations">
+  <div class="marquee__track" id="marqueeTrack">
+    <div class="marquee__set">
+      <span class="cred"><svg class="ic ic--sm"><use href="#i-bank"/></svg>State Revenue Office Victoria</span>
+      <span class="cred cred--logo">PEXA</span>
+      <span class="cred"><svg class="ic ic--sm"><use href="#i-case"/></svg>Law Institute Victoria</span>
+      <span class="cred">PropTech Winner 2025</span>
+      <span class="cred">Property Analyst — Finalist</span>
+    </div>
+    <div class="marquee__set" aria-hidden="true">
+      <span class="cred"><svg class="ic ic--sm"><use href="#i-bank"/></svg>State Revenue Office Victoria</span>
+      <span class="cred cred--logo">PEXA</span>
+      <span class="cred"><svg class="ic ic--sm"><use href="#i-case"/></svg>Law Institute Victoria</span>
+      <span class="cred">PropTech Winner 2025</span>
+      <span class="cred">Property Analyst — Finalist</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFERRAL ============ -->
+<section class="referral">
+  <div class="shell referral__in">
+    <h2 class="referral__title" data-split-title>Realestate agent? Refer with confidence.</h2>
+    <div class="referral__cta">
+      <a class="btn btn--white" href="#quote">Get a Quote</a>
+      <a class="btn btn--outline-white" href="tel:1300956321"><svg class="ic ic--sm"><use href="#i-phone"/></svg>1300 956 321</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="shell footer__grid">
+    <div class="fcol">
+      <h4 class="fcol__h">Services</h4>
+      <a href="#properties">Buying</a><a href="#properties">Selling</a><a href="#fees">Off The Plan</a><a href="#fees">Commercial</a>
+    </div>
+    <div class="fcol">
+      <h4 class="fcol__h">Company</h4>
+      <a href="#top">About</a><a href="#resources">Our Team</a><a href="#top">Careers</a><a href="#quote">Contact</a>
+    </div>
+    <div class="fcol">
+      <h4 class="fcol__h">Fees</h4>
+      <a href="#fees">Fees &amp; Pricing</a><a href="#guides">Calculator</a><a href="#guides">Resources</a>
+    </div>
+    <div class="fcol">
+      <h4 class="fcol__h">Locations</h4>
+      <a href="#footer">Melbourne</a><a href="#footer">Gold Coast &amp; Sunshine Coast</a><a href="#footer">Sydney</a><a href="#footer">Hobart</a><a href="#footer">Perth</a>
+    </div>
+    <div class="fcol">
+      <h4 class="fcol__h">Resources</h4>
+      <a href="#resources">Medias</a><a href="#guides">Articles</a><a href="#faq">FAQ</a><a href="#resources">Glossary</a><a href="#resources">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="shell footer__base">
+    <p class="footer__copy">© 2013 – 2026 First Class Legal. All rights reserved.</p>
+    <div class="footer__links"><a href="#top">Terms of service</a><a href="#top">Privacy policy</a></div>
+    <div class="footer__social">
+      <a href="#top" aria-label="Facebook"><svg class="ic ic--sm"><use href="#i-fb"/></svg></a>
+      <a href="#top" aria-label="Instagram"><svg class="ic ic--sm"><use href="#i-ig"/></svg></a>
+      <a href="#top" aria-label="LinkedIn"><svg class="ic ic--sm"><use href="#i-li"/></svg></a>
+      <a href="#top" aria-label="YouTube"><svg class="ic ic--sm"><use href="#i-yt"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY BAR ============ -->
+<div class="stickybar">
+  <a class="btn btn--red" href="tel:1300956321">Call Now</a>
+  <a class="btn btn--white" href="#quote">Get Free Quote</a>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
