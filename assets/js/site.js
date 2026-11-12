@@ -205,12 +205,19 @@
      ------------------------------------------------------------------ */
   function heroIntro() {
     var lines = document.querySelectorAll('.hero__txt');
+    var STEP = 55;   /* between characters */
+    var GAP = 150;   /* between lines */
+    var cursor = 140;
+
     Array.prototype.forEach.call(lines, function (line) {
-      Array.prototype.forEach.call(line.querySelectorAll('.ch'), function (c, i) {
-        c.style.transitionDelay = (200 + i * 95) + 'ms';
-        c.style.setProperty('--d', (200 + i * 95) + 'ms');
+      var chars = line.querySelectorAll('.ch');
+      Array.prototype.forEach.call(chars, function (c, i) {
+        var d = cursor + i * STEP;
+        c.style.setProperty('--d', d + 'ms');
       });
+      cursor += chars.length * STEP + GAP;
     });
+
     requestAnimationFrame(function () {
       document.body.classList.add('is-loaded');
       Array.prototype.forEach.call(lines, function (line) {
@@ -485,4 +492,14 @@
   } else {
     boot();
   }
+	/* ------------------------------------------------------------------
+     Video
+     ------------------------------------------------------------------ */
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
 })();
