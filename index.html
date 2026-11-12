@@ -5,12 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>First Class Legal — Conveyancing, from offer to settlement</title>
 <meta name="description" content="Fixed-fee conveyancing across Melbourne, Brisbane, the Sunshine Coast, Gold Coast, Sydney, Hobart and Perth. Track your matter from offer to settlement.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M5.5 15.4C5.5 11.2 8.6 8.4 12.8 7.4L30 3.6v40.8c0 8.2-3.2 13.4-8 13.8-6.2-1.6-12.4-13.4-14.8-25.6z' fill='%23F03A20'/%3E%3Cpath d='M32 17.4l21.4-3.6c3.6-.6 6.2 2.2 5.2 5.8l-7.4 26.8c-2 8.8-5.8 13.8-10.8 12.6-5.6-2.2-8-12.2-8.2-23z' fill='%23B4784C'/%3E%3C/svg%3E">
+<link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/img/hero.jpg" as="image">
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* Round play button — film section */
+.film{position:relative}
+.film__in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:2;pointer-events:none}
+.film .badge{pointer-events:auto;position:relative;display:grid;place-items:center;width:96px;height:96px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;color:#fff;-webkit-tap-highlight-color:transparent}
+.film .badge__ring{position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,255,255,.7);animation:playPulse 2.4s ease-out infinite}
+.film .badge__core{position:relative;display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:#fff;color:#0b1f3a;box-shadow:0 8px 28px rgba(0,0,0,.35);transition:transform .25s ease,box-shadow .25s ease}
+.film .badge__core .ic{width:32px;height:32px;margin-left:3px}
+.film .badge:hover .badge__core,.film .badge:focus-visible .badge__core{transform:scale(1.08);box-shadow:0 12px 34px rgba(0,0,0,.45)}
+.film .badge:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.film__cap{color:#fff;font-weight:600;letter-spacing:.02em;margin:0;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.film.is-playing .film__in,.film.is-playing .film__scrim{opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s}
+@keyframes playPulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+@media (prefers-reduced-motion:reduce){.film .badge__ring{animation:none}}
+@media (max-width:600px){.film .badge{width:80px;height:80px}.film .badge__core{width:60px;height:60px}.film .badge__core .ic{width:26px;height:26px}}
+</style>
 </head>
 <body>
 
@@ -34,17 +50,17 @@
   <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 9.4L12 4l9 5.4M4.6 9.6v8.2M9.4 9.6v8.2M14.6 9.6v8.2M19.4 9.6v8.2M2.6 19.8h18.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l8.4 8.4M16.4 16.4l2-2M13.8 13.8l2.2-2.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-fb" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/>
-    <path d="M14.7 7.5h-1.3c-.9 0-1.4.6-1.4 1.4v1.4h2.4l-.3 2.2h-2.1v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="currentColor" d="M9.9 21.2V13.8H7.6v-2.9h2.3V8.8c0-2.6 1.7-4.1 4.1-4.1 1.1 0 2 .1 2.3.15v2.6h-1.5c-1.2 0-1.6.5-1.6 1.5v1.8h2.9l-.4 2.9h-2.5V21.2z"/>
   </symbol>
   <symbol id="i-ig" viewBox="0 0 24 24">
-    <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
-    <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.7"/>
-    <circle cx="16.5" cy="6.7" r="1" fill="currentColor"/>
+    <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="16.7" cy="7.1" r="1.05" fill="currentColor"/>
   </symbol>
   <symbol id="i-li" viewBox="0 0 24 24">
-    <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="3.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
-    <path d="M7.4 10.3v6.3M7.4 7.5v.1M11 16.6v-6.3M11 12.5c0-1.4 1-2.3 2.2-2.3s2.3.9 2.3 2.4v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.6" cy="5.3" r="1.8" fill="currentColor"/>
+    <path d="M6.6 10.2V20.3" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round"/>
+    <path d="M13.7 20.3v-5.7c0-1.8.9-3 2.5-3s2.6 1.1 2.6 3v5.7" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
   <symbol id="i-yt" viewBox="0 0 24 24">
     <rect x="2.6" y="5.4" width="18.8" height="13.2" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
@@ -66,11 +82,7 @@
 <header class="header" id="header">
   <div class="shell header__in">
     <a class="brand" href="#top" aria-label="First Class Legal — home">
-      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M5.5 15.4C5.5 11.2 8.6 8.4 12.8 7.4L30 3.6v40.8c0 8.2-3.2 13.4-8 13.8-6.2-1.6-12.4-13.4-14.8-25.6z" fill="#F03A20"/>
-        <path d="M32 17.4l21.4-3.6c3.6-.6 6.2 2.2 5.2 5.8l-7.4 26.8c-2 8.8-5.8 13.8-10.8 12.6-5.6-2.2-8-12.2-8.2-23z" fill="#B4784C" opacity=".94"/>
-      </svg>
-      <span class="brand__word">First Class Legal</span>
+      <img class="brand__logo" src="assets/img/logo.svg" alt="First Class Legal" width="162" height="32">
     </a>
 
     <nav class="nav" aria-label="Primary">
@@ -103,9 +115,8 @@
     <div class="hero__inner shell">
       <div class="hero__copy">
         <h1 class="hero__title">
-          <span class="hero__line"><span class="hero__txt" data-split>Peace of Mind,</span></span>
-          <span class="hero__line"><span class="hero__txt" data-split>sale to settlement.</span></span>
-          <span class="hero__line hero__line--red"><span class="hero__txt" data-split>Offer only refers to buying</span></span>
+          <span class="hero__line"><span class="hero__txt" data-split data-rise=".9em" data-tilt="0" data-blur="4px">Peace of Mind,</span></span>
+          <span class="hero__line hero__line--accent"><span class="hero__txt" data-split data-rise=".9em" data-tilt="0" data-blur="4px">sale to settlement.</span></span>
         </h1>
         <p class="hero__lede" data-rise>Track your matter at every stage with our conveyancing technology – from the first enquiry to the day the keys change hands.</p>
         <div class="hero__cta" data-rise>
@@ -130,27 +141,10 @@
 <section class="paper section properties" id="properties">
   <div class="shell">
     <h2 class="statement" id="statement" data-split-opts data-step="26" data-rise=".55em" data-tilt="4">
-      <span class="s-line"><span class="s-txt" data-split>Conveyancing for</span></span>
-      <span class="s-line">
-        <span class="pill" data-pill><img src="assets/img/prop-buy.jpg" alt="Signing a property contract"></span>
-        <span class="s-txt" data-split>every kind of</span>
-      </span>
-      <span class="s-line">
-        <span class="pill" data-pill><img src="assets/img/prop-offplan.jpg" alt="A house under construction"></span>
-        <span class="s-txt" data-split>property</span>
-      </span>
+      <span class="s-line"><span class="s-txt" data-split>Conveyancing</span></span>
+      <span class="s-line"><span alt="Signing a property contract"></span> <span class="s-txt" data-split>for every kind</span></span>
+      <span class="s-line"><span alt="A house under construction"></span> <span class="s-txt" data-split>of property</span></span>
     </h2>
-    <div class="emblem" data-emblem aria-hidden="true">
-      <svg viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.6"/>
-        <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1.6"/>
-        <g transform="translate(30.4 32) scale(1.55)" fill="none" stroke="currentColor"
-           stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="8" r="4.2"/>
-          <path d="M11 11l8.4 8.4M16.4 16.4l2-2M13.8 13.8l2.2-2.2"/>
-        </g>
-      </svg>
-    </div>
   </div>
 
   <div class="rail" id="rail" data-rail>
@@ -198,16 +192,42 @@
 </section>
 
 <!-- ============ FILM ============ -->
+
 <section class="film" id="film">
-  <div class="film__media"><img src="assets/img/film.jpg" alt="The First Class Legal team in a client boardroom"></div>
-  <div class="film__scrim"></div>
-  <div class="shell film__in">
-    <button class="badge" type="button" aria-label="Play the First Class Legal film">
-      <span class="badge__ring" id="badgeRing" aria-hidden="true"></span>
-      <span class="badge__core"><svg class="ic ic--md"><use href="#i-play"/></svg></span>
-    </button>
-    <p class="film__cap" data-rise>Meet the team behind the file.</p>
+
+  <div class="film__media">
+    <video
+      class="film__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="assets/img/video.mp4" type="video/mp4">
+    </video>
   </div>
+
+  <div class="film__scrim"></div>
+
+  <div class="shell film__in">
+    <button class="badge" type="button"
+      aria-label="Play the First Class Legal film">
+
+      <span class="badge__ring" id="badgeRing"
+        aria-hidden="true"></span>
+
+      <span class="badge__core">
+        <svg class="ic ic--md">
+          <use href="#i-play"/>
+        </svg>
+      </span>
+
+    </button>
+
+    <p class="film__cap" data-rise>Play video</p>
+  </div>
+
 </section>
 
 <!-- ============ SERVICES ============ -->
@@ -573,37 +593,70 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer" id="footer">
-  <div class="shell footer__grid">
-    <div class="fcol">
-      <h4 class="fcol__h">Services</h4>
-      <a href="#properties">Buying</a><a href="#properties">Selling</a><a href="#fees">Off The Plan</a><a href="#fees">Commercial</a>
-    </div>
-    <div class="fcol">
-      <h4 class="fcol__h">Company</h4>
-      <a href="#top">About</a><a href="#resources">Our Team</a><a href="#top">Careers</a><a href="#quote">Contact</a>
-    </div>
-    <div class="fcol">
-      <h4 class="fcol__h">Fees</h4>
-      <a href="#fees">Fees &amp; Pricing</a><a href="#guides">Calculator</a><a href="#guides">Resources</a>
-    </div>
-    <div class="fcol">
-      <h4 class="fcol__h">Locations</h4>
-      <a href="#footer">Melbourne</a><a href="#footer">Gold Coast &amp; Sunshine Coast</a><a href="#footer">Sydney</a><a href="#footer">Hobart</a><a href="#footer">Perth</a>
-    </div>
-    <div class="fcol">
-      <h4 class="fcol__h">Resources</h4>
-      <a href="#resources">Medias</a><a href="#guides">Articles</a><a href="#faq">FAQ</a><a href="#resources">Glossary</a><a href="#resources">Terms &amp; Conditions</a>
+  <div class="shell">
+    <div class="footer__grid">
+      <div class="fcol">
+        <h4 class="fcol__h">Services</h4>
+        <ul class="fcol__list">
+          <li><a href="#properties">Buying</a></li>
+          <li><a href="#properties">Selling</a></li>
+          <li><a href="#services">Off The Plan</a></li>
+          <li><a href="#services">Commercial</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4 class="fcol__h">Company</h4>
+        <ul class="fcol__list">
+          <li><a href="#top">About</a></li>
+          <li><a href="#testimonials">Our Team</a></li>
+          <li><a href="#top">Careers</a></li>
+          <li><a href="#quote">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4 class="fcol__h">Fees</h4>
+        <ul class="fcol__list">
+          <li><a href="#fees">Fees &amp; Pricing</a></li>
+          <li><a href="#quote">Calculator</a></li>
+          <li><a href="#guides">Resources</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4 class="fcol__h">Locations</h4>
+        <ul class="fcol__list">
+          <li><a href="#footer">Melbourne</a></li>
+          <li><a href="#footer">Gold Coast &amp; Sunshine Coast</a></li>
+          <li><a href="#footer">Sydney</a></li>
+          <li><a href="#footer">Hobart</a></li>
+          <li><a href="#footer">Perth</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4 class="fcol__h">Resources</h4>
+        <ul class="fcol__list">
+          <li><a href="#resources">Medias</a></li>
+          <li><a href="#guides">Articles</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#resources">Glossary</a></li>
+          <li><a href="#footer">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="fcol fcol--connect">
+        <h4 class="fcol__h">Connect us</h4>
+        <ul class="footer__social">
+          <li><a href="#top" aria-label="First Class Legal on Facebook"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fb"/></svg></a></li>
+          <li><a href="#top" aria-label="First Class Legal on Instagram"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg></a></li>
+          <li><a href="#top" aria-label="First Class Legal on LinkedIn"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-li"/></svg></a></li>
+          <li><a href="#top" aria-label="First Class Legal on YouTube"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-yt"/></svg></a></li>
+        </ul>
+        <img class="footer__logo" src="assets/img/logo-footer.svg" width="229" height="60"
+             alt="First Class Legal — your partner in property. A Deep Blue company.">
+      </div>
     </div>
   </div>
   <div class="shell footer__base">
     <p class="footer__copy">© 2013 – 2026 First Class Legal. All rights reserved.</p>
     <div class="footer__links"><a href="#top">Terms of service</a><a href="#top">Privacy policy</a></div>
-    <div class="footer__social">
-      <a href="#top" aria-label="Facebook"><svg class="ic ic--sm"><use href="#i-fb"/></svg></a>
-      <a href="#top" aria-label="Instagram"><svg class="ic ic--sm"><use href="#i-ig"/></svg></a>
-      <a href="#top" aria-label="LinkedIn"><svg class="ic ic--sm"><use href="#i-li"/></svg></a>
-      <a href="#top" aria-label="YouTube"><svg class="ic ic--sm"><use href="#i-yt"/></svg></a>
-    </div>
   </div>
 </footer>
 
@@ -615,6 +668,32 @@
 
 <div class="grain" aria-hidden="true"></div>
 
+<script>
+(function(){
+  var film=document.getElementById('film');
+  if(!film) return;
+  var video=film.querySelector('.film__video');
+  var btn=film.querySelector('.badge');
+  if(!video||!btn) return;
+  btn.addEventListener('click',function(){
+    video.muted=false;
+    video.loop=false;
+    video.controls=true;
+    video.currentTime=0;
+    var p=video.play();
+    if(p&&p.catch) p.catch(function(){video.muted=true;video.play();});
+    film.classList.add('is-playing');
+  });
+  function reset(){
+    film.classList.remove('is-playing');
+    video.controls=false;
+    video.muted=true;
+    video.loop=true;
+    video.play();
+  }
+  video.addEventListener('ended',reset);
+})();
+</script>
 <script src="assets/js/site.js"></script>
 </body>
 </html>
